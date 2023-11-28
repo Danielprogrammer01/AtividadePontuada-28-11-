@@ -29,7 +29,7 @@ int main()
     {
         fflush(stdin);
 
-        printf("\nDigite o nome da %d™ pessoa: ", i + 1);
+        printf("\nDigite o nome da %d¬™ pessoa: ", i + 1);
         gets(nome[i]);
 
         fflush(stdin);
@@ -37,7 +37,7 @@ int main()
         printf("\nDigite a idade: ", i + 1);
         scanf("%d", &idade[i]);
 
-        // Validando maior e menor idade com operador tern·rio
+        // Definindo maior e menor idade com operador tern√°rio
 
         maiorIdade = idade[i] > maiorIdade ? idade[i] : maiorIdade;
         menorIdade = idade[i] < menorIdade ? idade[i] : menorIdade;
@@ -45,7 +45,7 @@ int main()
         printf("\nDigite a altura em metros: ", i+1);
         scanf("%f", &altura[i]);
 
-        // Validando maior e menor altura com operador tern·rio
+        // Definindo maior e menor altura com operador tern√°rio
 
         maiorAltura = altura[i] > maiorAltura ? altura[i] : maiorAltura;
         menorAltura = altura[i] < menorAltura ? altura[i] : menorAltura;
@@ -53,7 +53,7 @@ int main()
         printf("\nDigite o peso: ", i + 1);
         scanf("%f", &peso[i]);
 
-        // Validando maior e menor peso com estrutura condicional
+        //  Definindo maior e menor peso com estrutura condicional
 
         if (peso[i] > maiorPeso)
         {
@@ -68,11 +68,11 @@ int main()
         system("cls || clear");
     }
 
-    // Exibindo dados ao usu·rio
+    // Exibindo dados ao usu√°rio
 
     for (i = 0; i < quantidade; i++)
     {
-        printf("\n%d™ Pessoa: %s ", i + 1, nome[i]);
+        printf("\n%d¬™ Pessoa: %s ", i + 1, nome[i]);
         
         printf("\n");
 
