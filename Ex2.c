@@ -12,7 +12,7 @@ int main()
 
     int i;
     int j;
-    int quantidadeDeAlunos = 2;
+    int quantidadeDeAlunos = 5;
     int quantidadeDeNotas = 3;
     float soma[quantidadeDeAlunos];
     float media[quantidadeDeAlunos];
@@ -27,7 +27,7 @@ int main()
     {
         fflush(stdin);
 
-        printf("\nDigite o nome do %d∫ aluno: ", i + 1);
+        printf("\nDigite o nome do %d¬∫ aluno: ", i + 1);
         gets(nome[i]);
 
         fflush(stdin);
@@ -41,14 +41,14 @@ int main()
             do
             {
 
-            printf("\nDigite a %d™ nota: ", j+1);
+            printf("\nDigite a %d¬™ nota: ", j+1);
             scanf("%f", &notas[i][j]);
         
             // Validando a nota
 
             if (notas[i][j] > 10 || notas[i][j] < 0)
             {
-                printf("\nNOTA INV¡LIDA! Digite novamente.");
+                printf("\nNOTA INV√ÅLIDA! Digite novamente.");
                 printf("\n");
             }
             
@@ -58,18 +58,18 @@ int main()
 
         }
 
-        // Calculando a mÈdia
+        // Calculando a m√©dia
 
         media[i] = soma[i] / quantidadeDeNotas;
 
         system("cls || clear");
     }
 
-    // Exibindo dados ao usu·rio
+    // Exibindo dados ao usu√°rio
 
     for (i = 0; i < quantidadeDeAlunos; i++)
     {
-        printf("\n%d∫ Aluno: %s ", i+1, nome[i]);
+        printf("\n%d¬∫ Aluno: %s ", i+1, nome[i]);
 
         printf("\n");
 
@@ -79,12 +79,12 @@ int main()
 
         for (j = 0; j < quantidadeDeNotas; j++)
         {
-            printf("\n%d™ Nota: %.1f pontos", j+1, notas[i][j]);
+            printf("\n%d¬™ Nota: %.1f pontos", j+1, notas[i][j]);
         }
 
         printf("\n");
 
-        printf("\nMÈdia: %.1f pontos", media[i]);
+        printf("\nM√©dia: %.1f pontos", media[i]);
 
         // Validando com estrutura condicional
 
@@ -94,7 +94,7 @@ int main()
         }
         else if (media[i] >= 5.0)
         {
-            strcpy(situacao[i], "EM RECUPERA«√O!");
+            strcpy(situacao[i], "EM RECUPERA√á√ÉO!");
         }
         else
         {
@@ -103,7 +103,7 @@ int main()
 
         printf("\n");
 
-        printf("\nSituaÁ„o do Aluno: %s", situacao[i]);
+        printf("\nSitua√ß√£o do Aluno: %s", situacao[i]);
 
         printf("\n");
         printf("\n------------------------------");
