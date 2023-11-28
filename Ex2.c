@@ -86,7 +86,7 @@ int main()
 
         printf("\nMédia: %.1f pontos", media[i]);
 
-        // Validando com estrutura condicional
+        // Definindo situação do aluno
 
         if (media[i] >= 7.0)
         {
